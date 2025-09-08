@@ -50,6 +50,12 @@ export const workExperience = [
 
 export const education = [
   {
+    institution: "ESGI Paris",
+    location: "Paris, France",
+    degree: "Master’s degree 1 Expert in WEB engineering",
+    period: "2025 - now...",
+  },  
+  {
     institution: "IRIS Paris",
     location: "Paris, France",
     degree: "Bachelor in Web Development",
