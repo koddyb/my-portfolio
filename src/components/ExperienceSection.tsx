@@ -49,18 +49,38 @@ export default function ExperienceSection() {
                   <h4 className="text-sm font-medium">Key Achievements</h4>
                 </div>
                 <ul className="list-none ml-4 space-y-2 text-sm">
-                  {job.achievements.map((achievement, i) => (
+                  {job.achievements.map((achievement, i) => {
+                  // Simple regex to detect URLs (http/https)
+                  const urlRegex = /(https?:\/\/[^\s]+)/g;
+                  const parts = achievement.split(urlRegex);
+
+                  return (
                     <motion.li
-                      key={i}
-                      className="text-muted-foreground relative pl-6"
-                      initial={{ opacity: 0, x: -10 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.3, delay: 0.1 * i }}
-                      viewport={{ once: true }}
+                    key={i}
+                    className="text-muted-foreground relative pl-6"
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.1 * i }}
+                    viewport={{ once: true }}
                     >
-                      {achievement}
+                    {parts.map((part, idx) =>
+                      urlRegex.test(part) ? (
+                      <a
+                        key={idx}
+                        href={part}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-purple-500 underline break-all"
+                      >
+                        {part}
+                      </a>
+                      ) : (
+                      <span key={idx}>{part}</span>
+                      )
+                    )}
                     </motion.li>
-                  ))}
+                  );
+                  })}
                 </ul>
               </motion.div>
             </TimelineItem>

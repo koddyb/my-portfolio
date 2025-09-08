@@ -1,171 +1,218 @@
 export const personalInfo = {
-  name: "Lorem Ipsum ",
-  location: "Dolor Sit Amet",
-  email: "lorem@ipsum.com",
-  github: "https://github.com/loremipsum",
-  linkedin: "https://linkedin.com/in/loremipsum",
-  profilePicture: "/profile.jpeg",
+  name: "Borman KADJI",
+  location: "Île-de-France, France",
+  email: "bormantagouo@gmail.com",
+  github: "https://github.com/koddyb",
+  linkedin: "https://www.linkedin.com/in/borman-kadji/",
+  profilePicture: "profile.jpg",
   heroDescription:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Web Development Bachelor student at IRIS Paris, passionate about digital technologies and specialized in Fullstack development. Curious, rigorous, and highly motivated, I am looking for an apprenticeship to contribute to innovative projects while strengthening my skills in React, Node.js, Python, Symfony, and PostgreSQL.",
 };
 
 export const workExperience = [
   {
-    company: "Lorem Ipsum Corp",
-    location: "Lorem City",
-    position: "Lorem Engineer",
-    period: "Jan 2020 - Present",
+    company: "COG WEB DESIGN",
+    location: "Creil, France",
+    position: "Web Development Intern",
+    period: "Feb 2024 - May 2024",
     achievements: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      "Excepteur sint occaecat cupidatat non proident.",
-      "Sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.",
+      "Redesigned the Grima Loussouarn website.",
+      "Built dynamic user interfaces using React and Next.js and backend services with PHP (Symfony).",
+      "Improved SEO and optimized website performance.",
+      "Developed web scraping tools with Python/Django.",
+      "Created the company’s showcase website https://cogwebdesign.tech/.",
     ],
   },
   {
-    company: "Dolor Sit Amet",
-    location: "Ipsumville",
-    position: "Software Developer",
-    period: "Feb 2019 - Jan 2020",
+    company: "Bled_Shop (Personal Project)",
+    location: "IUT-FV, Cameroon",
+    position: "Fullstack Developer",
+    period: "2022",
     achievements: [
-      "Morbi in sem quis dui placerat ornare.",
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
+      "Designed UML diagrams and defined functional requirements.",
+      "Developed an online marketplace for local merchants.",
+      "Integrated online payment via MonetBill API.",
+      "Tech stack: Java, Spring Boot, Bootstrap, JavaScript, MySQL.",
     ],
   },
   {
-    company: "Consectetur Inc.",
-    location: "Adipiscing, Ipsum",
-    position: "Intern",
-    period: "Jun 2018 - Feb 2019",
+    company: "WIN TECHNOLOGY",
+    location: "IUT-FV, Cameroon",
+    position: "Web & Mobile Development Intern",
+    period: "Mar 2022 - Jun 2022",
     achievements: [
-      "Praesent dapibus, neque id cursus faucibus.",
-      "Fusce feugiat malesuada odio.",
+      "Developed a web application for administrative management.",
+      "Contributed to the company’s internal management software.",
+      "Tech stack: Bootstrap, HTML/CSS, JavaScript, Node.js, PHP, MySQL.",
     ],
   },
 ];
 
 export const education = [
   {
-    institution: "Lorem Ipsum University",
-    location: "Lorem City",
-    degree: "BSc Lorem Ipsum",
-    period: "2015 - 2019",
-    achievements: [
-      "President of Lorem Ipsum Club",
-      "Organized multiple lorem events",
-      "Represented university in national competitions.",
-      "Graduated with honors.",
-    ],
+    institution: "IRIS Paris",
+    location: "Paris, France",
+    degree: "Bachelor in Web Development",
+    period: "2024 - 2025",
+  },
+  {
+    institution: "IUT-FV Bandjoun",
+    location: "Cameroon",
+    degree: "Bachelor of Technology",
+    period: "2022 - 2023",
+  },
+  {
+    institution: "IUT-FV Bandjoun",
+    location: "Cameroon",
+    degree: "Diploma in Software Engineering (DUT)",
+    period: "2020 - 2022",
   },
 ];
+
 export const skills = {
-  programmingLanguages: [
-    "LoremLang",
-    "IpsumScript",
-    "DolorLang",
-    "SitLang",
-    "AmetLang",
-    "ConsecteturLang",
-  ],
-  frontendDevelopment: [
-    "LoremJS",
-    "IpsumJS",
-    "Dolor Native",
-    "Sit UI",
-    "Amet CSS",
-    "HTML",
-    "CSS",
-  ],
-  backendDevelopment: ["LoremNode", "IpsumExpress"],
-  databaseAndStorage: ["LoremDB", "IpsumORM"],
-  cloudAndDevOps: ["LoremCloud"],
-  toolsAndServices: [
-    "LoremAuth",
-    "IpsumCMS",
-    "DolorAnalytics",
-    "SitValidator",
-    "AmetMonitor",
-    "ConsecteturPanel",
-    "AdipiscingTrigger",
-  ],
+  programmingLanguages: ["JavaScript", "Java", "Python", "PHP", "SQL"],
+  frontendDevelopment: ["React", "Next.js", "Angular", "HTML", "CSS", "Bootstrap"],
+  backendDevelopment: ["Node.js", "Symfony", "Django", "Spring Boot"],
+  databaseAndStorage: ["PostgreSQL", "MySQL", "SQLite"],
+  cloudAndDevOps: ["Google Cloud Platform", "Linux", "Apache", "Jenkins", "Docker"],
+  toolsAndServices: ["GitHub", "UML", "Merise", "Kanban", "Scrum"],
 };
 
 export const projects = [
   {
-    title: "Lorem Ipsum Project",
-    github: "https://github.com/loremipsum/project",
+    title: "COG WebDesign Showcase Website",
+    github: "https://cogwebdesign.tech/",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      "Excepteur sint occaecat cupidatat non proident.",
+      "Redesigned and developed the agency’s showcase website.",
+      "Tech stack: React.js, Next.js, PHP, Python (Django), WordPress.",
     ],
   },
   {
-    title: "Dolor Sit Amet App",
-    github: "https://github.com/loremipsum/dolorapp",
+    title: "Bled_Shop Marketplace",
+    github: "https://github.com/koddyb/BledShop",
     description: [
-      "Morbi in sem quis dui placerat ornare.",
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
-      "Praesent dapibus, neque id cursus faucibus.",
-      "Fusce feugiat malesuada odio.",
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "Designed and developed a local e-commerce marketplace.",
+      "Tech stack: Java, Spring Boot, Bootstrap, JavaScript, MySQL.",
+    ],
+  },
+  {
+    title: "Win Technology Administrative Management",
+    github: "https://win-technology.net/",
+    description: [
+      "Developed a web application for internal administrative management.",
+      "Tech stack: Node.js, PHP, MySQL, JavaScript, HTML/CSS.",
     ],
   },
 ];
 
-export const awards = [
-  {
-    name: "Lorem Ipsum Award",
-    issuer: "Lorem Organization",
-    date: "Jan 2020",
-    type: "International",
-    position: "First Place",
-  },
-  {
-    name: "Dolor Sit Amet Prize",
-    issuer: "Ipsum Foundation",
-    date: "Feb 2021",
-    type: "National",
-    position: "Runner-up",
-  },
-  {
-    name: "Consectetur Hackathon",
-    issuer: "Adipiscing Org",
-    date: "Mar 2022",
-    type: "National",
-    position: "Winner",
-  },
-  {
-    name: "Vestibulum Event",
-    issuer: "Vestibulum College",
-    date: "Apr 2022",
-    type: "National",
-    position: "First Prize",
-  },
-  {
-    name: "Curabitur Hackfest",
-    issuer: "Curabitur Institute",
-    date: "May 2022",
-    type: "National",
-    position: "Second Prize",
-  },
-  {
-    name: "Praesent Hacks",
-    issuer: "Praesent Group",
-    date: "Jun 2022",
-    type: "National",
-    position: "Second Runner-up",
-  },
-  {
-    name: "Fusce Hack",
-    issuer: "Fusce Club",
-    date: "Jul 2022",
-    type: "National",
-    position: "Most Impactful Hack",
-  },
-];
+export const awards = [];
+
+
+// export const personalInfo = {
+//   name: "Borman KADJI",
+//   location: "Île-de-France, France",
+//   email: "bormantagouo@gmail.com",
+//   github: "https://github.com/koddyb",
+//   linkedin: "https://www.linkedin.com/in/borman-kadji/",
+//   profilePicture: "/profile.jpg",
+//   heroDescription:
+//     "Étudiant en Bachelor Développement Web à l’IRIS Paris, passionné par le digital et spécialisé en développement Fullstack. Curieux, rigoureux et motivé, je recherche une alternance pour contribuer à des projets innovants tout en consolidant mes compétences en React, Node.js, Python, Symfony et PostgreSQL.",
+// };
+
+// export const workExperience = [
+//   {
+//     company: "COG WEB DESIGN",
+//     location: "Creil, Hauts-de-France",
+//     position: "Stagiaire Développement Web",
+//     period: "Déc. 2022 - Mai 2023",
+//     achievements: [
+//       "Refonte complète du site web Grima Loussouarn.",
+//       "Conception et développement d’interfaces dynamiques en React et Next.js.",
+//       "Amélioration SEO et optimisation des performances.",
+//       "Développement d’outils de scraping avec Python/Django.",
+//       "Création du site vitrine de l’entreprise COG WebDesign.",
+//     ],
+//   },
+//   {
+//     company: "Bled_Shop (Projet personnel)",
+//     location: "IUT-FV, Cameroun",
+//     position: "Concepteur & Développeur Fullstack",
+//     period: "2022",
+//     achievements: [
+//       "Conception UML et définition des besoins fonctionnels.",
+//       "Développement d’une marketplace en ligne pour commerçants locaux.",
+//       "Implémentation des paiements via API MonetBill.",
+//       "Stack technique : Java, Spring Boot, Bootstrap, JavaScript, MySQL.",
+//     ],
+//   },
+//   {
+//     company: "WIN TECHNOLOGY",
+//     location: "IUT-FV, Cameroun",
+//     position: "Stagiaire Développement Web & Mobile",
+//     period: "Mars 2022 - Juin 2022",
+//     achievements: [
+//       "Développement d’une application web de gestion administrative.",
+//       "Participation aux logiciels de gestion interne de l’entreprise.",
+//       "Stack technique : Bootstrap, HTML/CSS, JavaScript, Node.js, PHP, MySQL.",
+//     ],
+//   },
+// ];
+
+// export const education = [
+//   {
+//     institution: "IRIS Paris",
+//     location: "Paris, France",
+//     degree: "Bachelor 3 Développement Web",
+//     period: "2024 - 2025",
+//   },
+//   {
+//     institution: "IUT-FV Bandjoun",
+//     location: "Cameroun",
+//     degree: "Licence de Technologies",
+//     period: "2022 - 2023",
+//   },
+//   {
+//     institution: "IUT-FV Bandjoun",
+//     location: "Cameroun",
+//     degree: "DUT Génie Logiciel",
+//     period: "2020 - 2022",
+//   },
+// ];
+
+// export const skills = {
+//   programmingLanguages: ["JavaScript", "Java", "Python", "PHP", "SQL"],
+//   frontendDevelopment: ["React", "Next.js", "Angular", "HTML", "CSS", "Bootstrap"],
+//   backendDevelopment: ["Node.js", "Symfony", "Django", "Spring Boot"],
+//   databaseAndStorage: ["PostgreSQL", "MySQL", "SQLite"],
+//   cloudAndDevOps: ["Google Cloud Platform", "Linux", "Apache", "Jenkins", "Docker"],
+//   toolsAndServices: ["GitHub", "UML", "Merise", "Kanban", "Scrum"],
+// };
+
+// export const projects = [
+//   {
+//     title: "COG WebDesign Site Vitrine",
+//     github: "https://cogwebdesign.tech/",
+//     description: [
+//       "Refonte et développement du site vitrine de l’agence.",
+//       "Stack : React.js, Next.js, PHP, Python (Django), WordPress.",
+//     ],
+//   },
+//   {
+//     title: "Bled_Shop Marketplace",
+//     github: "https://github.com/koddyb/BledShop",
+//     description: [
+//       "Conception et développement d’une marketplace locale.",
+//       "Stack : Java, Spring Boot, Bootstrap, JavaScript, MySQL.",
+//     ],
+//   },
+//   {
+//     title: "Win Technology Gestion Administrative",
+//     github: "https://win-technology.net/",
+//     description: [
+//       "Développement d’une application web pour la gestion interne.",
+//       "Stack : Node.js, PHP, MySQL, JavaScript, HTML/CSS.",
+//     ],
+//   },
+// ];
+
+// export const awards = [];
