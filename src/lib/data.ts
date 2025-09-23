@@ -87,7 +87,9 @@ export const skills = {
 export const projects = [
   {
     title: "COG WebDesign Showcase Website",
-    github: "https://cogwebdesign.tech/",
+    online: true,
+    link: "https://cogwebdesign.tech/",
+    dossierImg: "cogwebdesign",
     description: [
       "Redesigned and developed the agency’s showcase website.",
       "Tech stack: React.js, Next.js, PHP, Python (Django), WordPress.",
@@ -95,7 +97,9 @@ export const projects = [
   },
   {
     title: "Bled_Shop Marketplace",
-    github: "https://github.com/koddyb/BledShop",
+    online: false,
+    link: "https://github.com/koddyb/BledShop",
+    dossierImg: "bledshop",
     description: [
       "Designed and developed a local e-commerce marketplace.",
       "Tech stack: Java, Spring Boot, Bootstrap, JavaScript, MySQL.",
@@ -103,7 +107,9 @@ export const projects = [
   },
   {
     title: "Win Technology Administrative Management",
-    github: "https://win-technology.net/",
+    online: true,
+    link: "https://win-technology.net/",
+    dossierImg: "wintechnology",
     description: [
       "Developed a web application for internal administrative management.",
       "Tech stack: Node.js, PHP, MySQL, JavaScript, HTML/CSS.",

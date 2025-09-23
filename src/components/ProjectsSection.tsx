@@ -1,5 +1,6 @@
 import React from "react";
 import { projects } from "@/lib/data";
+import ProjectCarousel from "./ui/ProjectCarousel";
 import {
   CardContent,
   CardDescription,
@@ -7,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import { Github } from "lucide-react";
+import { Github, Globe } from "lucide-react";
 import { GlassCard } from "./ui/glass-card";
 import MotionWrapper from "./MotionWrapper";
 import { motion } from "framer-motion";
@@ -47,19 +48,42 @@ export default function ProjectsSection() {
                     ))}
                   </ul>
                 </CardContent>
-                <CardFooter className="flex justify-center md:justify-start items-center border-t border-border/30 bg-gradient-to-r from-purple-500/5 to-pink-500/5">
-                  <motion.a
-                    href={project.github}
+
+                {/* Mini carousel for project images */}
+                <CardFooter className="flex flex-col gap-3 border-t border-border/30 bg-gradient-to-r from-purple-500/5 to-pink-500/5">
+                  <div className="w-full flex justify-center items-center py-2">
+                  <ProjectCarousel dossierImg={project.dossierImg} />
+                  </div>
+                  <div className="flex justify-center md:justify-start items-center gap-4">
+                  {project.link && project.online && (
+                    <motion.a
+                    href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-8"
+                    className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                  >
+                    >
+                    <Globe className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
+                    View Website 🌐
+                    </motion.a>
+                  )}
+                  {project.link && !project.online && (
+                    <motion.a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    >
                     <Github className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
                     View on GitHub 🔗
-                  </motion.a>
+                    </motion.a>
+                  )}
+                  </div>
                 </CardFooter>
+
               </GlassCard>
             </MotionWrapper>
           ))}
