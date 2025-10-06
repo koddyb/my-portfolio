@@ -10,17 +10,30 @@ export const personalInfo = {
 };
 
 export const workExperience = [
-  {
+    {
+        company: "EDREAMS FACTORY",
+        location: "Paris, France",
+        position: "Full Stack Web Developer",
+        period: "Jun 2025 - Sept 2025",
+        achievements: [
+            "Maintain and develop our internal Ekkotime framework based on Symfony.",
+            "Design and development of new customized modules based on customer or internal needs.",
+            "Develop APIs for enterprise applications and services.",
+            "Tech stack : React.js, PHP, Symfony, Tailwindcss Jira, Slack."
+        ],
+    },
+    {
     company: "COG WEB DESIGN",
     location: "Creil, France",
-    position: "Web Development Intern",
-    period: "Feb 2024 - May 2024",
+    position: "Web Developer",
+    period: "Dec 2024 - April 2025",
     achievements: [
       "Redesigned the Grima Loussouarn website.",
       "Built dynamic user interfaces using React and Next.js and backend services with PHP (Symfony).",
       "Improved SEO and optimized website performance.",
       "Developed web scraping tools with Python/Django.",
       "Created the company’s showcase website https://cogwebdesign.tech/.",
+      "Tech stack : React.js, NEXT.js, PHP, Python (Django), JavaScript, SQLite et MySQL",
     ],
   },
   {
@@ -39,7 +52,7 @@ export const workExperience = [
     company: "WIN TECHNOLOGY",
     location: "IUT-FV, Cameroon",
     position: "Web & Mobile Development Intern",
-    period: "Mar 2022 - Jun 2022",
+    period: "Feb 2022 - Aug 2022",
     achievements: [
       "Developed a web application for administrative management.",
       "Contributed to the company’s internal management software.",
