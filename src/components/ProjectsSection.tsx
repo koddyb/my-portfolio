@@ -65,7 +65,7 @@ export default function ProjectsSection() {
                     whileTap={{ scale: 0.95 }}
                     >
                     <Globe className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
-                    View Website 🌐
+                    View Website
                     </motion.a>
                   )}
                   {project.link && !project.online && (
@@ -78,7 +78,7 @@ export default function ProjectsSection() {
                     whileTap={{ scale: 0.95 }}
                     >
                     <Github className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
-                    View on GitHub 🔗
+                    View on GitHub
                     </motion.a>
                   )}
                   </div>
