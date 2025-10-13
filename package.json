@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.2.1",
+    "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-slot": "^1.1.2",
     "@tailwindcss/vite": "^4.0.14",
     "@types/react": "^19.0.12",

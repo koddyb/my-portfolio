@@ -4,9 +4,10 @@ export const personalInfo = {
   email: "bormantagouo@gmail.com",
   github: "https://github.com/koddyb",
   linkedin: "https://www.linkedin.com/in/borman-kadji/",
-  profilePicture: "profile.jpg",
+  phone: "+33 7 59 50 11 47",
+  profilePicture: "profile.png",
   heroDescription:
-    "Web Development Bachelor student at IRIS Paris, passionate about digital technologies and specialized in Fullstack development. Curious, rigorous, and highly motivated, I am looking for an apprenticeship to contribute to innovative projects while strengthening my skills in React, Node.js, Python, Symfony, and PostgreSQL.",
+    "Web Engineering student at ESGI Paris, passionate about digital innovation and specialized in Fullstack development. Curious, rigorous, and driven by a desire to build impactful and scalable solutions, I design and develop modern web applications using React, PHP, JavaScript, Node.js, Python, Symfony, and PostgreSQL. I am currently seeking a work-study opportunity to contribute to innovative projects while further honing my skills.",
 };
 
 export const workExperience = [
@@ -36,18 +37,7 @@ export const workExperience = [
       "Tech stack : React.js, NEXT.js, PHP, Python (Django), JavaScript, SQLite et MySQL",
     ],
   },
-  {
-    company: "Bled_Shop (Personal Project)",
-    location: "IUT-FV, Cameroon",
-    position: "Fullstack Developer",
-    period: "2022",
-    achievements: [
-      "Designed UML diagrams and defined functional requirements.",
-      "Developed an online marketplace for local merchants.",
-      "Integrated online payment via MonetBill API.",
-      "Tech stack: Java, Spring Boot, Bootstrap, JavaScript, MySQL.",
-    ],
-  },
+
   {
     company: "WIN TECHNOLOGY",
     location: "IUT-FV, Cameroon",
@@ -89,8 +79,8 @@ export const education = [
 ];
 
 export const skills = {
-  programmingLanguages: ["JavaScript", "Java", "Python", "PHP", "SQL"],
-  frontendDevelopment: ["React", "Next.js", "Angular", "HTML", "CSS", "Bootstrap"],
+  programmingLanguages: ["PHP", "JavaScript", "Java", "Python", "SQL"],
+  frontendDevelopment: ["React", "Next.js", "HTML", "CSS", "Tailwindcss"],
   backendDevelopment: ["Node.js", "Symfony", "Django", "Spring Boot"],
   databaseAndStorage: ["PostgreSQL", "MySQL", "SQLite"],
   cloudAndDevOps: ["Google Cloud Platform", "Linux", "Apache", "Jenkins", "Docker"],
@@ -128,9 +118,27 @@ export const projects = [
       "Tech stack: Node.js, PHP, MySQL, JavaScript, HTML/CSS.",
     ],
   },
+    {
+    title: "Skullibs.io",
+    online: false,
+    link: "https://github.com/koddyb/Skullibs",
+    dossierImg: "skullibs",
+    description: [
+      "Centralized platform for academic excellence.",
+      "Tech stack: Next.js, React, Node.js, PostgreSQL, Supabase.",
+    ],
+  },
 ];
 
-export const awards = [];
+export const awards = [
+  {
+    name: "Concepteur Developpeur de Solution",
+    issuer: "MediaShool",
+    date: "Oct 2025",
+    type: "Certification",
+    url: "Concepteur_de_solution_digitale.pdf"
+  },
+];
 
 
 // export const personalInfo = {
