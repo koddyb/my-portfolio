@@ -136,7 +136,7 @@ export const awards = [
     issuer: "MediaShool",
     date: "Oct 2025",
     type: "Certification",
-    url: "Concepteur_de_solution_digitale.pdf"
+    url: "Certification/Concepteur_de_solution_digitale.pdf"
   },
 ];
 

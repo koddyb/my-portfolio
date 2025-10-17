@@ -1,9 +1,13 @@
 import { personalInfo } from "@/lib/data";
-import { Mail, Github, MapPin, Linkedin, PhoneCall } from "lucide-react";
+import { Mail, Github, MapPin, Linkedin, PhoneCall, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
+import { useState } from "react";
+import { PdfViewer } from "./ui/PdfViewer";
 
 export default function HeroSection() {
+  const [isPdfOpen, setIsPdfOpen] = useState(false);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -106,6 +110,17 @@ export default function HeroSection() {
                 <PhoneCall className="h-4 w-4 mr-2" />
                  {personalInfo.phone}
               </motion.a>
+
+              <motion.button
+                onClick={() => setIsPdfOpen(true)}
+                className="text-lg text-white px-3 py-2 bg-purple-500/10 rounded-full hover:bg-purple-500/20 transition-colors cursor-pointer"
+                variants={childVariants}
+                whileHover={{ scale: 1.05, color: "white" }}
+              >
+                
+                See my resume
+              </motion.button>
+
             </motion.div>
           </div>
 
@@ -136,6 +151,13 @@ export default function HeroSection() {
           </div>
         </MotionWrapper>
       </div>
+      
+      <PdfViewer 
+        isOpen={isPdfOpen}
+        onClose={() => setIsPdfOpen(false)}
+        pdfUrl="Documents/CV_Borman_Kadji.pdf"
+        title="Resume Borman Kadji"
+      />
     </section>
   );
 }
