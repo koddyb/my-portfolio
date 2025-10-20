@@ -1,7 +1,16 @@
 import { personalInfo } from "@/lib/data";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { initVisitCounter, getVisitCount } from "@/lib/visitCounter";
 
 export default function Footer() {
+  const [visitCount, setVisitCount] = useState(0);
+
+  useEffect(() => {
+    // Initialiser le compteur de visites au chargement du composant
+    setVisitCount(initVisitCounter());
+  }, []);
+
   return (
     <footer className="border-t border-purple-500/10 py-6 bg-gradient-to-b from-background to-muted/20 backdrop-blur-sm">
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
@@ -27,7 +36,7 @@ export default function Footer() {
             viewport={{ once: true }}
             whileHover={{ scale: 1.01 }}
           >
-            Built with{" "}
+            Visites: {visitCount} • Built with{" "}
             <motion.span
               className="inline-block"
               initial={{ rotate: 0 }}
