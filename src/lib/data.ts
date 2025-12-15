@@ -83,7 +83,7 @@ export const skills = {
   backendDevelopment: ["Node.js", "Symfony", "Django", "Spring Boot"],
   databaseAndStorage: ["PostgreSQL", "MySQL", "SQLite"],
   cloudAndDevOps: ["Google Cloud Platform", "Linux", "Apache", "Jenkins", "Docker"],
-  toolsAndServices: ["GitHub", "UML", "Merise", "Kanban", "Scrum"],
+  toolsAndServices: ["GitHub", "UML", "Merise", "Kanban", "Scrum", "AI/GenAI"],
 };
 
 export const projects = [
