@@ -7,7 +7,7 @@ export const personalInfo = {
   phone: "+33 7 59 50 11 47",
   profilePicture: "profile.png",
   heroDescription:
-    "Web Engineering student at ESGI Paris, passionate about digital innovation and specialized in Fullstack development. Curious, rigorous, and driven by a desire to build impactful and scalable solutions, I design and develop modern web applications using React, PHP, JavaScript, Node.js, Python, Symfony, and PostgreSQL. I am currently seeking a work-study opportunity to contribute to innovative projects while further honing my skills.",
+    "My goal is to become a full-stack web developer. That's why I chose ESGI Paris, a school renowned for its professional approach and cutting-edge specializations in web development. With my experience in the SCRUM environment and my active monitoring of GCP and AI/GenAI initiatives, I keep myself constantly informed of new web trends, high-performance backend frameworks (Django/Symfony), and best practices for deployment in order to remain at the forefront of the field. Translated with DeepL.com (free version)",
 };
 
 export const workExperience = [
@@ -135,7 +135,7 @@ export const awards = [
     issuer: "MediaShool",
     date: "Oct 2025",
     type: "Certification",
-    url: "Certification/Concepteur_de_solution_digitale.pdf"
+    url: "Certification/Concepteur_de_solution_digitale_2025.pdf"
   },
 ];
 
