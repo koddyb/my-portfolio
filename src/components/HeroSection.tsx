@@ -155,7 +155,7 @@ export default function HeroSection() {
       <PdfViewer 
         isOpen={isPdfOpen}
         onClose={() => setIsPdfOpen(false)}
-        pdfUrl="Documents/CV_Borman_Kadji.pdf"
+        pdfUrl="Documents/CV_Borman_kadji_Dev_Web.pdf"
         title="Resume Borman Kadji"
       />
     </section>
