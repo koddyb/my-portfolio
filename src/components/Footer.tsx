@@ -4,12 +4,6 @@ import { useEffect, useState } from "react";
 import { initVisitCounter, getVisitCount } from "@/lib/visitCounter";
 
 export default function Footer() {
-  const [visitCount, setVisitCount] = useState(0);
-
-  useEffect(() => {
-    // Initialiser le compteur de visites au chargement du composant
-    setVisitCount(initVisitCounter());
-  }, []);
 
   return (
     <footer className="border-t border-purple-500/10 py-6 bg-gradient-to-b from-background to-muted/20 backdrop-blur-sm">
@@ -36,7 +30,7 @@ export default function Footer() {
             viewport={{ once: true }}
             whileHover={{ scale: 1.01 }}
           >
-            Visites: {visitCount} • Built with{" "}
+            Built with{" "}
             <motion.span
               className="inline-block"
               initial={{ rotate: 0 }}
