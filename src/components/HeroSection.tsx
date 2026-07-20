@@ -1,5 +1,5 @@
 import { personalInfo } from "@/lib/data";
-import { Mail, Github, MapPin, Linkedin, PhoneCall, FileText } from "lucide-react";
+import { Mail, Github, MapPin, Linkedin, PhoneCall, FileText, Sparkles, Code, GraduationCap } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 import { useState } from "react";
@@ -45,14 +45,20 @@ export default function HeroSection() {
               variants={childVariants}
             >
               {personalInfo.name}{" "}
-              <span className="inline-block animate-pulse">✨</span>
+              <Sparkles className="inline-block h-7 w-7 text-purple-500 animate-pulse" />
             </motion.h1>
 
             <motion.p
-              className="text-xl text-muted-foreground mb-6"
+              className="text-xl text-muted-foreground mb-6 flex items-center justify-center md:justify-start gap-2 flex-wrap"
               variants={childVariants}
             >
-              Software Developer 👨‍💻 / Apprenticeship 👩‍🎓
+              <span className="flex items-center gap-1.5">
+                <Code className="h-5 w-5" /> Software Developer
+              </span>
+              /
+              <span className="flex items-center gap-1.5">
+                <GraduationCap className="h-5 w-5" /> Apprenticeship
+              </span>
             </motion.p>
 
             <motion.div
@@ -113,11 +119,11 @@ export default function HeroSection() {
 
               <motion.button
                 onClick={() => setIsPdfOpen(true)}
-                className="text-lg text-white px-3 py-2 bg-purple-500/10 rounded-full hover:bg-purple-500/20 transition-colors cursor-pointer"
+                className="flex items-center gap-2 text-lg text-white px-3 py-2 bg-purple-500/10 rounded-full hover:bg-purple-500/20 transition-colors cursor-pointer"
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "white" }}
               >
-                
+                <FileText className="h-4 w-4" />
                 See my resume
               </motion.button>
 

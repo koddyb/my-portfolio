@@ -1,6 +1,6 @@
 import { workExperience } from "@/lib/data";
 import TimelineItem from "./TimelineItem";
-import { Briefcase } from "lucide-react";
+import { Briefcase, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
@@ -12,16 +12,16 @@ export default function ExperienceSection() {
     >
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
-          <h2 className="text-2xl font-bold mb-8 text-center md:text-left flex items-center md:inline-block">
+          <h2 className="text-2xl font-bold mb-8 text-center md:text-left flex items-center justify-center md:justify-start gap-2">
             <motion.span
-              className="inline-block mr-2"
+              className="inline-flex"
               initial={{ rotate: 0 }}
               whileInView={{ rotate: [0, -10, 10, -5, 5, 0] }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              💼
-            </motion.span>{" "}
+              <Briefcase className="h-6 w-6 text-purple-500" />
+            </motion.span>
             Work Experience
           </h2>
         </MotionWrapper>
@@ -29,9 +29,10 @@ export default function ExperienceSection() {
           {workExperience.map((job, index) => (
             <TimelineItem
               key={job.company + job.period}
-              title={`👨‍💻 ${job.position} | ${job.company}`}
-              subtitle={`🌍 ${job.location}`}
-              date={`📅 ${job.period}`}
+              title={`${job.position} | ${job.company}`}
+              subtitle={job.location}
+              subtitleIcon={MapPin}
+              date={job.period}
               isLast={index === workExperience.length - 1}
               index={index}
             >

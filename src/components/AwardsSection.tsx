@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { awards } from "@/lib/data";
-import { Trophy } from "lucide-react";
+import { Trophy, Building2, Calendar, FileBadge, Award } from "lucide-react";
 import MotionWrapper from "./MotionWrapper";
 import { GlassCard } from "./ui/glass-card";
 import { motion } from "framer-motion";
@@ -31,8 +31,9 @@ export default function AwardsSection() {
     >
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
-          <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🏆 Licences and Certifications
+          <h2 className="text-2xl font-bold mb-8 text-center md:text-left flex items-center justify-center md:justify-start gap-2">
+            <Trophy className="h-6 w-6 text-purple-500" />
+            Licences and Certifications
           </h2>
         </MotionWrapper>
 
@@ -51,13 +52,15 @@ export default function AwardsSection() {
                     </motion.div>
                     <h3 className="font-medium">{award.name}</h3>
                   </div>
-                  <p className="text-xs text-muted-foreground mb-1 pl-8">
-                    🏢 {award.issuer}
+                  <p className="text-xs text-muted-foreground mb-1 pl-8 flex items-center gap-1">
+                    <Building2 className="h-3 w-3" />
+                    {award.issuer}
                   </p>
                   <div className="flex flex-col space-y-2 mt-auto">
                     <div className="flex justify-between items-center">
-                      <span className="text-xs text-muted-foreground bg-background/50 px-2 py-1 rounded-md">
-                        📅 {award.date}
+                      <span className="text-xs text-muted-foreground bg-background/50 px-2 py-1 rounded-md flex items-center gap-1">
+                        <Calendar className="h-3 w-3" />
+                        {award.date}
                       </span>
                       {award.url && (
                         <motion.button
@@ -70,10 +73,14 @@ export default function AwardsSection() {
                       )}
                     </div>
                     <motion.span
-                      className="text-xs text-muted-foreground/80 bg-background/50 px-2 py-1 rounded-md w-fit"
+                      className="text-xs text-muted-foreground/80 bg-background/50 px-2 py-1 rounded-md w-fit flex items-center gap-1"
                       whileHover={{ scale: 1.05 }}
                     >
-                      {award.type === "Certification" ? "📜 " : "🇮🇳 "}
+                      {award.type === "Certification" ? (
+                        <FileBadge className="h-3 w-3" />
+                      ) : (
+                        <Award className="h-3 w-3" />
+                      )}
                       {award.type}
                     </motion.span>
                   </div>

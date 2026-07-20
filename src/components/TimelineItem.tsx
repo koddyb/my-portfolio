@@ -1,10 +1,12 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { Calendar, type LucideIcon } from "lucide-react";
 
 interface TimelineItemProps {
   title: string;
   subtitle: string;
+  subtitleIcon?: LucideIcon;
   date: string;
   isLast?: boolean;
   index?: number;
@@ -14,6 +16,7 @@ interface TimelineItemProps {
 export default function TimelineItem({
   title,
   subtitle,
+  subtitleIcon: SubtitleIcon,
   date,
   isLast = false,
   index = 0,
@@ -59,8 +62,14 @@ export default function TimelineItem({
           viewport={{ once: true, margin: "-50px" }}
         >
           <h3 className="font-medium">{title}</h3>
-          <p className="text-sm text-muted-foreground">{subtitle}</p>
-          <p className="text-xs text-muted-foreground/70 mb-2">{date}</p>
+          <p className="text-sm text-muted-foreground flex items-center gap-1.5">
+            {SubtitleIcon && <SubtitleIcon className="h-3.5 w-3.5" />}
+            {subtitle}
+          </p>
+          <p className="text-xs text-muted-foreground/70 mb-2 flex items-center gap-1.5">
+            <Calendar className="h-3 w-3" />
+            {date}
+          </p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}

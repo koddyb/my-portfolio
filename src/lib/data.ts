@@ -7,22 +7,20 @@ export const personalInfo = {
   phone: "+33 7 59 50 11 47",
   profilePicture: "profile.png",
   heroDescription:
-    "My goal is to become a full-stack web developer. That's why I chose ESGI Paris, a school renowned for its professional approach and cutting-edge specializations in web development. With my experience in the SCRUM environment and my active monitoring of GCP and AI/GenAI initiatives, I keep myself constantly informed of new web trends, high-performance backend frameworks (Django/Symfony), and best practices for deployment in order to remain at the forefront of the field. Translated with DeepL.com (free version)",
+    "My goal is to become a Full Stack developer engineer. With my experience in the SCRUM environment and my active monitoring of GCP, AWS, Azure, DevOps culture and Cloud AI/GenAI initiatives, I keep myself constantly informed of new web trends. I have solid knowledge of high-performance backend frameworks (Symfony, Django), as well as cloud technologies and deployment best practices in order to remain at the forefront of the field.",
 };
 
 export const workExperience = [
     {
-        company: "COG WEB DESIGN",
-        location: "Creil, France",
-        position: "Web Developer",
-        period: "Dec 2024 - April 2025",
+        company: "NEURONES IT",
+        location: "Paris, France",
+        position: "Full Stack Web Developer (Apprentice)",
+        period: "May 2026 - Sept 2026",
         achievements: [
-            "Redesigned the Grima Loussouarn website.",
-            "Built dynamic user interfaces using React and Next.js and backend services with PHP (Symfony).",
-            "Improved SEO and optimized website performance.",
-            "Developed web scraping tools with Python/Django.",
-            "Created the company’s showcase website https://cogwebdesign.tech/.",
-            "Tech stack : React.js, NEXT.js, PHP, Python (Django), Wordpress, JavaScript, SQLite et MySQL, Github CI/CD",
+            "Took part in the technical and functional design phases of applications, and in continuously improving development practices (quality, security, performance).",
+            "Developed back-end features (APIs, services, processing) and front-end interfaces, while designing and optimizing relational databases.",
+            "Contributed to the integration of AI building blocks (LLM).",
+            "Tech stack : Python (Django), PHP (Symfony), Vue.js, React, MySQL, Azure, Kubernetes, LLM",
         ],
     },
     {
@@ -31,10 +29,22 @@ export const workExperience = [
         position: "Full Stack Web Developer",
         period: "Jun 2025 - Sept 2025",
         achievements: [
-            "Maintain and develop our internal Ekkotime framework based on Symfony.",
-            "Design and development of new customized modules based on customer or internal needs.",
-            "Develop APIs for enterprise applications and services.",
-            "Tech stack : Angular, PHP, Symfony, NodeJs (TypeScript), Tailwindcss Jira, Slack"
+            "Maintained and improved the internal Ekkotime framework (Symfony) to keep it compatible with new client APIs, and improved its technical documentation.",
+            "Designed and developed custom modules and APIs in response to client and internal team needs.",
+            "Tech stack : React/Angular, PHP, Symfony, NodeJs (TypeScript), Tailwindcss, Jira",
+        ],
+    },
+    {
+        company: "COG WEB DESIGN",
+        location: "Creil, France",
+        position: "Web Developer",
+        period: "Dec 2024 - April 2025",
+        achievements: [
+            "Redesigned the Grima Loussouarn website, implementing the UI/UX with React/Next.js and optimizing SEO, leading to a significant increase in organic traffic.",
+            "Built online stores for ARF Cosmetics and Dakim Edition.",
+            "Created the company’s showcase website https://cogwebdesign.tech/.",
+            "Developed web scraping tools with Python/Django and interfaced them with relational databases.",
+            "Tech stack : React.js, NEXT.js, PHP, Python (Django), Shopify, Wordpress, TypeScript (Node.js), SQLite et MySQL, Github CI/CD",
         ],
     },
       {
@@ -78,12 +88,12 @@ export const education = [
 ];
 
 export const skills = {
-  programmingLanguages: ["PHP", "JavaScript", "Java", "Python", "SQL"],
-  frontendDevelopment: ["React","Angular", "Next.js", "HTML", "CSS", "Tailwindcss"],
-  backendDevelopment: ["Node.js", "Symfony", "Django", "Spring Boot"],
-  databaseAndStorage: ["PostgreSQL", "MySQL", "SQLite"],
-  cloudAndDevOps: ["Google Cloud Platform", "Linux", "Apache", "Jenkins", "Docker"],
-  toolsAndServices: ["GitHub", "UML", "Merise", "Kanban", "Scrum", "AI/GenAI"],
+  programmingLanguages: ["PHP", "JavaScript", "TypeScript", "Java", "Python", "SQL"],
+  frontendDevelopment: ["React", "Angular", "Vue.js", "Next.js", "HTML", "CSS", "Tailwindcss", "MUI"],
+  backendDevelopment: ["Node.js", "Symfony", "Django", "Spring Boot", "FastAPI"],
+  databaseAndStorage: ["PostgreSQL", "MySQL", "MongoDB", "SQLite"],
+  cloudAndDevOps: ["Google Cloud Platform", "Azure", "Docker", "Kubernetes", "Linux", "Jenkins", "GitLab CI/CD"],
+  toolsAndServices: ["GitHub", "UML", "Merise", "Kanban", "Scrum", "GenAI & Prompt Engineering", "Low-Code/No-Code"],
 };
 
 export const projects = [
@@ -139,112 +149,3 @@ export const awards = [
   },
 ];
 
-
-// export const personalInfo = {
-//   name: "Borman KADJI",
-//   location: "Île-de-France, France",
-//   email: "bormantagouo@gmail.com",
-//   github: "https://github.com/koddyb",
-//   linkedin: "https://www.linkedin.com/in/borman-kadji/",
-//   profilePicture: "/profile.jpg",
-//   heroDescription:
-//     "Étudiant en Bachelor Développement Web à l’IRIS Paris, passionné par le digital et spécialisé en développement Fullstack. Curieux, rigoureux et motivé, je recherche une alternance pour contribuer à des projets innovants tout en consolidant mes compétences en React, Node.js, Python, Symfony et PostgreSQL.",
-// };
-
-// export const workExperience = [
-//   {
-//     company: "COG WEB DESIGN",
-//     location: "Creil, Hauts-de-France",
-//     position: "Stagiaire Développement Web",
-//     period: "Déc. 2022 - Mai 2023",
-//     achievements: [
-//       "Refonte complète du site web Grima Loussouarn.",
-//       "Conception et développement d’interfaces dynamiques en React et Next.js.",
-//       "Amélioration SEO et optimisation des performances.",
-//       "Développement d’outils de scraping avec Python/Django.",
-//       "Création du site vitrine de l’entreprise COG WebDesign.",
-//     ],
-//   },
-//   {
-//     company: "Bled_Shop (Projet personnel)",
-//     location: "IUT-FV, Cameroun",
-//     position: "Concepteur & Développeur Fullstack",
-//     period: "2022",
-//     achievements: [
-//       "Conception UML et définition des besoins fonctionnels.",
-//       "Développement d’une marketplace en ligne pour commerçants locaux.",
-//       "Implémentation des paiements via API MonetBill.",
-//       "Stack technique : Java, Spring Boot, Bootstrap, JavaScript, MySQL.",
-//     ],
-//   },
-//   {
-//     company: "WIN TECHNOLOGY",
-//     location: "IUT-FV, Cameroun",
-//     position: "Stagiaire Développement Web & Mobile",
-//     period: "Mars 2022 - Juin 2022",
-//     achievements: [
-//       "Développement d’une application web de gestion administrative.",
-//       "Participation aux logiciels de gestion interne de l’entreprise.",
-//       "Stack technique : Bootstrap, HTML/CSS, JavaScript, Node.js, PHP, MySQL.",
-//     ],
-//   },
-// ];
-
-// export const education = [
-//   {
-//     institution: "IRIS Paris",
-//     location: "Paris, France",
-//     degree: "Bachelor 3 Développement Web",
-//     period: "2024 - 2025",
-//   },
-//   {
-//     institution: "IUT-FV Bandjoun",
-//     location: "Cameroun",
-//     degree: "Licence de Technologies",
-//     period: "2022 - 2023",
-//   },
-//   {
-//     institution: "IUT-FV Bandjoun",
-//     location: "Cameroun",
-//     degree: "DUT Génie Logiciel",
-//     period: "2020 - 2022",
-//   },
-// ];
-
-// export const skills = {
-//   programmingLanguages: ["JavaScript", "Java", "Python", "PHP", "SQL"],
-//   frontendDevelopment: ["React", "Next.js", "Angular", "HTML", "CSS", "Bootstrap"],
-//   backendDevelopment: ["Node.js", "Symfony", "Django", "Spring Boot"],
-//   databaseAndStorage: ["PostgreSQL", "MySQL", "SQLite"],
-//   cloudAndDevOps: ["Google Cloud Platform", "Linux", "Apache", "Jenkins", "Docker"],
-//   toolsAndServices: ["GitHub", "UML", "Merise", "Kanban", "Scrum"],
-// };
-
-// export const projects = [
-//   {
-//     title: "COG WebDesign Site Vitrine",
-//     github: "https://cogwebdesign.tech/",
-//     description: [
-//       "Refonte et développement du site vitrine de l’agence.",
-//       "Stack : React.js, Next.js, PHP, Python (Django), WordPress.",
-//     ],
-//   },
-//   {
-//     title: "Bled_Shop Marketplace",
-//     github: "https://github.com/koddyb/BledShop",
-//     description: [
-//       "Conception et développement d’une marketplace locale.",
-//       "Stack : Java, Spring Boot, Bootstrap, JavaScript, MySQL.",
-//     ],
-//   },
-//   {
-//     title: "Win Technology Gestion Administrative",
-//     github: "https://win-technology.net/",
-//     description: [
-//       "Développement d’une application web pour la gestion interne.",
-//       "Stack : Node.js, PHP, MySQL, JavaScript, HTML/CSS.",
-//     ],
-//   },
-// ];
-
-// export const awards = [];

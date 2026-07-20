@@ -3,6 +3,15 @@ import { skills } from "@/lib/data";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 import { GlassCard } from "./ui/glass-card";
+import {
+  Wrench,
+  Code2,
+  Palette,
+  Server,
+  Database,
+  Cloud,
+  Hammer,
+} from "lucide-react";
 
 function SkillTag({ skill, index }: { skill: string; index: number }) {
   return (
@@ -52,8 +61,9 @@ export default function SkillsSection() {
     >
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
-          <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🛠️ Skills
+          <h2 className="text-2xl font-bold mb-8 text-center md:text-left flex items-center justify-center md:justify-start gap-2">
+            <Wrench className="h-6 w-6 text-purple-500" />
+            Skills
           </h2>
         </MotionWrapper>
 
@@ -67,7 +77,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                <span className="mr-2 text-xl">💻</span> Programming Languages
+                <Code2 className="mr-2 h-5 w-5 text-purple-500" /> Programming Languages
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.programmingLanguages.map((skill, index) => (
@@ -80,7 +90,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                <span className="mr-2 text-xl">🎨</span> Frontend Development
+                <Palette className="mr-2 h-5 w-5 text-purple-500" /> Frontend Development
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.frontendDevelopment.map((skill, index) => (
@@ -93,7 +103,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                <span className="mr-2 text-xl">⚙️</span> Backend Development
+                <Server className="mr-2 h-5 w-5 text-purple-500" /> Backend Development
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.backendDevelopment.map((skill, index) => (
@@ -106,7 +116,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                <span className="mr-2 text-xl">🗄️</span> Database & Storage
+                <Database className="mr-2 h-5 w-5 text-purple-500" /> Database & Storage
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.databaseAndStorage.map((skill, index) => (
@@ -119,7 +129,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                <span className="mr-2 text-xl">☁️</span> Cloud & DevOps
+                <Cloud className="mr-2 h-5 w-5 text-purple-500" /> Cloud & DevOps
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.cloudAndDevOps.map((skill, index) => (
@@ -132,7 +142,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                <span className="mr-2 text-xl">🧰</span> Tools & Services
+                <Hammer className="mr-2 h-5 w-5 text-purple-500" /> Tools & Services
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.toolsAndServices.map((skill, index) => (
